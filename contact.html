@@ -1,0 +1,72 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>wakeless - oneiric concophonic collective</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Macondo" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Electrolize" />
+    <Link rel="stylesheet" href="css/default.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+  <div class="wrapper">
+
+      <div class="topnav">
+          <a href="#home" class="active">x</a>
+          <!-- Navigation links (hidden by default) -->
+          <div id="links">
+              <a href="backstory.html">backstory</a>
+              <a href="agenda.html">agenda</a>
+              <a href="projects.html">projects</a>
+              <a href="contact.html">contact</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+
+        <picture class="illustration">
+          <source media="(max-width: 412px)" type="image/avif" srcset="img/contact412.avif" />
+          <source media="(min-width: 413px)" type="image/avif" srcset="img/contact800.avif" />
+          <img src="img/contact800.png" alt="Wakeless concophonic collective" />
+        </picture>
+
+        <div class="content">
+          <span class="title">contact us</span>
+          <p>We are actively recruiting for the collective: Artists, crafstmen, writers,
+          engineers, inventors, software designers, developers, writers, architects, researchers,
+          marketing and sales people, and all of those practicioners of the voodoo called business.</p>
+          <p>We also function as an incubator and are eager to hear original ideas and if they are really
+            good help to bring them to life. </p>
+          <p>email wakeless.one@gmail.com or call 801.600.5069</p>
+          <p>Or walk in to any of our facilities worldwide and speak with one of our consultants.
+            His name is chris and all of our international facilities are currently consolidated in
+            an old rv somewhere on the west side of salt lake city, ut
+          </p>
+
+        </div>
+
+
+
+
+
+
+
+  </div>
+  <script>
+    function openNav() {
+        var x = document.getElementById("links");
+        if(x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
+  </script>
+
+</body>
