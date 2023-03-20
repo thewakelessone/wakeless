@@ -45,85 +45,77 @@ img {
       color: black;
   }
 /* Style the active link (or home/logo) */
-.active {
-  background-color: #000011;
-  color: white;
-}
-.title {
-  font: 1.8em Electrolize, Arial, sans-serif;
-}
-
-.content {
-  width: 98%;
-  background-color: #666
-  valign: top;
-  padding-left: 1em;
-}
-.sidebar {
-  background-color: rgba(207, 232, 220, 0.5);
-  padding: 10px;
-}
-
-article {
-  margin-bottom: 1em;
-}
-@media screen and (max-width: 39em) {
-.container{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 25% 25% 25% 25%;
-    background-color: #000000;
-}
-.mhlogo {
-   grid-column: 1 / 2;
-   grid-row: 1 / 2;
-   padding: 0px;
-}
-.mhcopy {
-   grid-column: 2 / 3;
-   grid-row: 1 / 2;
-   padding: 0.1em 1em;
-   background-color: #000000;
-}
-
-.blogo {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    height: 100%;
-    background-color: #000000;
-}
-.bcopy {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    padding: 1em;
-    background-color: #000000;
-}
-
-.anarchlogo {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-    height: 100%;
-}
-.anarchcopy {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-    padding: 1em;
-}
-
-.mindlogo {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-    height: 100%:
-}
-.mindcopy {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-    padding: 1em;
-}
-
+  .active {
+      background-color: #000011;
+      color: white;
+  }
+  .title {
+      font: 1.8em Electrolize, Arial, sans-serif;
+  }
+  .content {
+      width: 98%;
+      background-color: #666
+      valign: top;
+      padding-left: 1em;
+  }
+  .sidebar {
+      background-color: rgba(207, 232, 220, 0.5);
+    padding: 10px;
+  }
+  article {
+      margin-bottom: 1em;
+  }
+  .container{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 25% 25% 25% 25%;
+      background-color: #000000;
+  }
+  .mhlogo {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      padding: 0px;
+  }
+  .mhcopy {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      padding: 0.1em 1em;
+      background-color: #000000;
+  }
+  .blogo {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      height: 100%;
+      background-color: #000000;
+  }
+  .bcopy {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      padding: 1em;
+      background-color: #000000;
+  }
+  .anarchlogo {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      height: 100%;
+  }
+  .anarchcopy {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+      padding: 1em;
+  }
+  .mindlogo {
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
+      height: 100%:
+  }
+  .mindcopy {
+      grid-column: 2 / 3;
+      grid-row: 4 / 5;
+      padding: 1em;
+  }
   .biglinks { display: none; }
   .topnav { display: block; }
-
   .thumb { width: 100%; }
 }
 
