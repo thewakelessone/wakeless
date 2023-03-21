@@ -10,10 +10,13 @@ img {
   width: 100%;
 }
 .wrapper {
+  margin: 2em auto;
+  padding: 1em;
   background-color:#000000;
 }
 /* Style the navigation menu */
 .topnav {
+  display: block;
   overflow: hidden;
   background-color: #333;
   position: relative;
@@ -116,7 +119,7 @@ img {
       padding: 1em;
   }
   .biglinks { display: none; }
-  .topnav { display: block; }
+
   .thumb { width: 100%; }
 }
 

@@ -4,8 +4,8 @@
     <title>wakeless - oneiric concophonic collective</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Macondo" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Electrolize" />
-    <Link rel="stylesheet" href="css/default.css">
-    <Link rel="stylesheet" href="css/projects.css">
+
+    <Link rel="stylesheet" href="css/projectstest.css" />
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -24,70 +24,71 @@
               <a href="contactus.html">contact</a>
           </div>
           <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-          <a href="javascript:void(0);" class="icon" onclick="openNav()"><Link rel="stylesheet" href="css/projects.css">;
+          <a href="javascript:void(0);" class="icon" onclick="openNav()">
             <i class="fa fa-bars"></i>
           </a>
       </div>
 
-      <div class="bignav">
-          <div class="item"><a href="backstory.html">backstory</a></div>
-          <div class="item"><a href="agenda.html">agenda</a></div>
-          <div class="item"><a href="projects.html">projects</a></div>
-          <div class="item"><a href="contact.html">contact</a></div>
-        </div>
-
-          <div class="container">
+    <div class="container">
+      <figure>
               <picture class="mhlogo">
                 <source media="(max-width: 412px)" type="image/avif" srcset="img/mechhandsplash150.avif" />
                 <source media="(min-width: 413px)" type="image/avif" srcset="img/mechhandsplash400.avif" />
                 <a href="mechanicalhand.html"><img class="thumb" src="img/mechhandsplash400.png" alt="Wakeless concophonic collective" /></a>
               </picture>
-              <div class="mhcopy">Studio in a Can. ok
-                </div>
+              <figcaption>Studio in a Can. Feast your lookyballs on these sassy nuggets but be careful bud. We
+                will hyponomitize you</figcaption>
+      </figure>
 
-            <div class="divider1"> </div>
-
-           <div class="bcopy">Adventures in natural language, software language, reading, writing, research and design.
-           </div>
+      <figure>
               <picture class="blogo">
-                <source media="(max-width: 412px)" type="image/avif" srcset="img/blathersplash150.avif" />
-                <source media="(min-width: 413px)" type="image/avif" srcset="img/blathersplash400.avif" />
-                <a href="blather.html"><img class="thumb" src="img/blathersplash400.png" alt="Wakeless concophonic collective" /></a>
+                <source media="(max-width: 412px)" type="image/avif" srcset="img/blather150.avif" />
+                <source media="(min-width: 413px)" type="image/avif" srcset="img/blather400.avif" />
+                <a href="blather.html"><img class="thumb" src="img/blather400.png" alt="Wakeless concophonic collective" /></a>
               </picture>
+			        <figcaption>Humanity finally has a common language. No rules. Just a
+                  massive pile of words that have no inherent meaning.
+              </figcaption>
+      </figure>
 
-
+      <figure>
               <picture class="anarchlogo">
                 <source media="(max-width: 412px)" type="image/avif" srcset="img/anarchy150.avif" />
                 <source media="(min-width: 413px)" type="image/avif" srcset="img/anarchy400.avif" />
                 <a href="anarchy.html"><img class="thumb" src="img/anarchy400.png" alt="Wakeless concophonic collective" /></a>
               </picture>
-              <div class="anarchcopy">if the people-critters share, helps each others out, and is all
-                friendly like. Well thems happy people-critters taint need no bossy bossman.
-              </div>
+              <figcaption>if the people-critters share, helps each others out, and is all
+                friendly like. Well thems happy people-critters what don't need no boss mans or other
+                nothers fixin em up theys potholes and such.
+              </figcaption>
+      </figure>
 
-             <div class="divider3"> </div>
-
-            <div class="mindcopy">A collaboration of man and machine. Art made by bits and meat.
-
-            </div>
+      <figure>
               <picture class="mindlogo">
                 <source media="(max-width: 412px)" type="image/avif" srcset="img/meandmymadeupmind150.avif" />
                 <source media="(min-width: 413px)" type="image/avif" srcset="img/meandmymadeupmind400.avif" />
-                  <a href="mind.html"><img class="thumb" src="img/meandmymadeupmind400.png" alt="Wakeless concophonic collective" /></a>
+                  <a href="mind.html">
+                    <img class="thumb" src="img/meandmymadeupmind400.png" alt="Wakeless concophonic collective" />
+                  </a>
               </picture>
-
-          </div>
+              <figcaption>
+                  The famous quote by Giovanni Antonio von BitMeat said it all: "Well you've seen terminator right? Might
+                  as well milk the filthy red led eyed bastards for all their worth while we still can".
+              </figcaption>
+      </figure>
+    </div>
   </div>
-  <script>
-    function openNav() {
-        var x = document.getElementById("links");
-        if(x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
+    <script>
+        function openNav() {
+            var x = document.getElementById("links");
+            if(x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
         }
-    }
 
-  </script>
+    </script>
 
-</body>
+  </body>
+</html>
