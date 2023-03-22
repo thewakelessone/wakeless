@@ -41,7 +41,6 @@ img {
   right: 0;
   top: 0;
 }
-
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
    background-color: #ddd;
@@ -49,9 +48,22 @@ img {
 }
 /* Style the active link (or home/logo) */
 .active {
-   background-color: #000011;
+   background-color: #111122;
    color: white;
 }
+.bulletgrid {
+    display: flex;
+    flex-wrap: wrap;
+  /*  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+}
+.bulletgrid span {
+    border: 1px solid #eeeeff;
+    border-radius: 10px;
+    background-color: #222222;
+    padding: 1rem;
+    margin: 1rem;
+}
+
 @media screen and (max-width: 59em) {
   .title {
       font: 1.8em Electrolize, Arial, sans-serif;
@@ -62,10 +74,6 @@ img {
       valign: top;
       padding-left: 1em;
   }
-  .sidebar {
-      background-color: rgba(207, 232, 220, 0.5);
-      padding: 10px;
-  }
   article {
       margin-bottom: 1em;
   }
@@ -73,10 +81,10 @@ img {
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: 25% 25% 25% 25%;
-      background-color: #000000;
+      background-color: #333333;
   }
   .mhlogo {
-      grid-column: 1 / 2;
+      grid-column: 1 / 2;entities
       grid-row: 1 / 2;
       padding: 0px;
   }
@@ -124,32 +132,28 @@ img {
 }
 
 @media screen and (min-width: 60em) {
-  .topnav { display: none; }
-  .biglinks { display: block; }
+
   .wrapper {
     valign: top;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:  1fr 10% 1fr;
+    grid-template-rows: 1fr;
     column-gap: 20px;
   }
+  main {
+     grid-column: 1 / 2;
+     grid-row: 1 / 2;
+  }
   .illustration {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+  /*  grid-column: 1 / 2;
+    grid-row: 2 / 3;*/
     valign-align: top;
   }
   .content {
     background-color: #000000;
     grid-column: 2 / 3;
     grid-row: 1 / 4;
-  }
-  .biglinks {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
   }
   .item {
     padding: 0.5em;

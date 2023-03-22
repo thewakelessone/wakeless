@@ -10,35 +10,33 @@
  </head>
 
 <body>
-  <div class="wrapper">
-
-    <div class="topnav">
-      <a href="blather.html" class="active">cunning linguistics</a>
-      <!-- Navigation links (hidden by default) -->
-      <div id="links">
-        <a href="propoganda.html">propoganda</a>
-        <a href="reseach.html">research</a>
-        <a href="prose.html">prose</a>
-        <a href="book.html">The Book</a>
-        <a href="ware.html">Magic spells a.k.a. software</a>
-        <a href="index.html">Back to Wakeless</a>
+  <main class="wrapper">
+    <main>
+      <div class="topnav">
+        <a href="blather.html" class="active">cunning linguistics</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="links">
+          <a href="reseach.html">research</a>
+          <a href="prose.html">prose</a>
+          <a href="book.html">The Book</a>
+          <a href="ware.html">Magic spells a.k.a. software</a>
+          <a href="index.html">Back to Wakeless</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-      <a href="javascript:void(0);" class="icon" onclick="openNav()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
 
-    <div class="illustration">
-      <picture>
-        <source media="(max-width: 412px)" type="image/avif" srcset="img/blathersplash400.avif" />
-        <source media="(min-width: 413px)" type="image/avif" srcset="img/blathersplash742.avif" />
-        <img class="mainimg" src="img/blathersplash742.png" alt="blather" />
+      <picture class="illustration">
+        <source media="(max-width: 412px)" type="image/avif" srcset="img/blather400.avif" />
+        <source media="(min-width: 413px)" type="image/avif" srcset="img/blather800.avif" />
+        <img class="mainimg" src="img/blather800.png" alt="blather" />
       </picture>
-    </div>
+    </main>
         
     <div class="content">
-	      <p><h3>Fun facts about language and the stuff we make with it .</h3>
+	      <p><h3>Fun facts about language and the stuff we make with it.</h3>
             <ul>
                 <li>Language is a technology: Our most powerful tool and effective weapon.</li>
                 <li>Language is the mechanism of thought: no language no thinky parts wiggling around
