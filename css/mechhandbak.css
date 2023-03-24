@@ -2,19 +2,54 @@
 body {
   width: 100%;
   background-color: #000000;
-  color: #000000;
-  margin: 1em;
-  padding: 0.3em;
+  color: #ffffff;
+  margin: 0;
+  padding: 0.5rem;
   font: 1em/1.8 Electrolize, Arial, sans-serif;
 }
-img { }
+img { width: 100% }
 .tagline {
     font: 1.3em Electrolize, Arial, sans-serif;
 }
-
-
+.thumb {
+    margin: 0.5rem;
+ }
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #links {
+  display: none;
+}
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 1px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 @media screen and (max-width: 59em) {
-
+    .title1 { display: none; }
+    .title2 { display: none; }
+    .title3 { display: none; }
+    .gallery {
+        display: grid;
+        grid-gap: 1em;
+        background-color: #333344;
+        grid-template-columns: repeat(2, minmax(50px, 50%));
+        padding: 1em 1em 0 0;
+    }   
 }
 
 @media screen and (min-width: 60em) {
@@ -22,16 +57,16 @@ img { }
         display: grid;
         grid-template-columns: [left] 49% [mid] 1% [content] 50%;
    /*    grid-template-rows: min-content 3% minmax(min-content, 300px) 3% minmax(min-content, 300px) 3% minmax(min-content, 300px) 0.1em; */
-        grid-template-rows: repeat(auto-fit, min-content);
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr);
   }
   .left {
         background-color: #ffffff;
         grid-column: 1 / 2;
         grid-row: 1 / 8;
   }
-  .mainimg {
-      width: 100%;o
-  }
+  /* .mainimg {
+      width: 100%;
+  } */
   .mid {
         background-color: #000000;
         grid-column: 2 / 3;
@@ -97,10 +132,7 @@ img { }
       width: 100%;
       height: 80%;
   }
-  .thumb {
-      height: 100%;
-      max-height: 300px;
-  }
+
   .footer {
       grid-column: 3 / 4;
       grid-row: 8 / 9;
