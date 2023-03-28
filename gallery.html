@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special Elite" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Electrolize" />
     <Link rel="stylesheet" href="css/default.css" />
-    <Link rel="stylesheet" href="css/mechhand.css" />
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -15,35 +14,19 @@
 <body>
   <header>
       <div class="topnav">
-      	
           <a href="journal.html">Journal</a> .
           <a href="gallery.html">gallery</a> .
           <a href="projects.html">projects</a> .
           <a href="index.html"><img src="img/logobug.png" class="bug" /></a>
           <div id="links">
-              <a href="one.html">One</a>
               <a href="mechanicalhand.html">Mechanical Hand</a>
               <a href="blather.html">Blather Inflection</a>
+              <a href="one.html">One</a>
           </div>
       </div>
   </header>
   <main>
-    <article>
-      <picture class="illustration">
-        <source media="(max-width:412px)" type="image/avif" srcset="img/mechhandsplash400.avif" />
-        <source media="(min-width:413px)" type="image/avif" srcset="img/mechhandsplash730.avif" />
-        <img class="mainimg" src="img/mechhandsplash730.png" alt="mechanical hand" />
-      </picture>
-    <div class="content">
-          <span class="tagline">We ride the bleeding edge with bloodied hands and bleeding hearts.</span>
-          <p>We make the fancy snacks for your eyeholes. And a softened meat product that produces
-          gastro-intestinal brand awareness.  We create original artwork with traditional and digital media.
-            Make prints, clothing, shower curtains, stationary, tchachkis, knick-knacks, baubles, trinkets,
-            and gold dubloons. Illustration, animation, interaction, and graphic design are on the menu as well.
-          write software. We are a full service web shop offering design, content, development,
-          and architecture. Sculpture, 3D modeling, product design, and invention are things we do
-          here. Also Generative Art.</p>
-      <div class="gallery">
+     <div class="gallery">
         <div>
            <picture class="thumb">
               <source media="(max-width:1199px") type="image/avif" srcset="img/thumbs/100/naptime.avif" />
@@ -93,6 +76,13 @@
              <img src="img/thumbs/200/cybaby2.avif" onclick="showModal('img/detail/cybaby2.png')" class="thumb" />
           </picture>
         </div>
+       <div>
+           <picture class="thumb">
+              <source media="(max-width:1199px") type="image/avif" srcset="img/thumbs/100/redbeard.avif" />
+              <source media="(min-width:1200px") type="image/avif" srcset="img/thumbs/200/redbeard.avif" />
+             <img src="img/thumbs/200/redbeard.avif" onclick="showModal('img/detail/redbeard.jpg')" class="thumb" />
+          </picture>
+        </div>
         <div>
            <picture class="thumb">
               <source media="(max-width:1199px") type="image/avif" srcset="img/thumbs/100/lurking-aspen.avif" />
@@ -121,95 +111,13 @@
              <img src="img/thumbs/200/foggy-joe.avif" onclick="showModal('img/detail/foggy-joe.jpg')" class="thumb" />
           </picture>
         </div>
-        <div>
-           <picture class="thumb">
-              <source media="(max-width:1199px") type="image/avif" srcset="img/thumbs/100/redbeard.avif" />
-              <source media="(min-width:1200px") type="image/avif" srcset="img/thumbs/200/redbeard.avif" />
-             <img src="img/thumbs/200/redbeard.avif" onclick="showModal('img/detail/redbeard.jpg')" class="thumb" />
-          </picture>
-        </div>
-      </div>
-      
-      <article class="artlesson">
-         <p>Humans have been fascinated with technology since the first sharpened stick.
-          Every new breakthrough goes through a process. Step 1 is impressive
-          abstraction - the "ooh aah" phase. We are all impressed but left wondering
-           what in the hell we would do with it.
-        </p>
-        <p>This is where we come in. Artists are by definition people that tinker with
-          technology in unintended (see incorrect) ways. Usually we just end up breaking them shits
-          but occassionally we get unexpected and interesting results. Invariably some of these results
-          inspire a portion of the great unwashed to attempt something similar and eventually some
-          cheesy grinned suit wearing mother fuckers find a way to capitalize on the whole thing. And
-          by this process cutting edge scientific potential becomes a range of tools, toys, and gadgets
-          that entertain, engage, and ocassionally improve or at least significantly alter our daily lives.
-        </p>
-      </div>
-	</main>
 
-    </div>
-  </div>
-  <!-- The Modal -->
-  <div id="modal" class="modal">
-      <!-- modal content -->
-      <div class="modalContent">
-        <!-- The close button -->
-        <span class="close">&times;</span>
-
-        <img id="modal-img" class="modalImg" />
       </div>
-    </div>
+  </main>
     <footer>
       <div>Wakeless Concophonic Collective</div>
       <div>wakeless.one@gmail.com</div>
       <div>385-490-1165</div>
   </footer>
 
-  <script>
-        function openNav() {
-            var x = document.getElementById("links");
-            if(x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-  </script>
-
-  <script>
-         // Get the modal by id
-         var modal = document.getElementById("modal");
-         // Get the <span> element that closes the modal
-         var span = document.getElementsByClassName("close")[0];
-         // Get the modal image tag
-         var modalImg = document.getElementById("modal-img");
-
-         // this function is called when a small image is clicked
-         function showModal(src) {
-
-             console.log(src);
-             // modal.classList.remove('hidden');
-             modal.style.display = "block";
-
-             modalImg.src = src;
-             modalImg.style.height = "80%";
-             modalImg.style.width = "auto";
-
-             // console.log("modal" + modal);
-             // console.log("modalImg" + modalImg);
-         }
-
-         // When the user clicks on <span> (x), close the modal
-         span.onclick = function() {
-             modal.style.display = "none";
-         }
-         // When the user clicks anywhere outside of the modal, close it
-         window.onclick = function(event) {
-             if (event.target == modal) {
-               modal.style.display = "none";
-             }
-         }
-     </script>
 </body>
-
-</html>

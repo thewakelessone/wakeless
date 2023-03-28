@@ -4,30 +4,28 @@ body {
   background-color: #000;
   color: #ffffff;
   margin: 0;
-  font: 1em/1.8 Electrolize, Arial, sans-serif;
+  font: 3vw Electrolize, Arial, sans-serif;
 }
 img {
   width: 100%;
 }
-header {
-  background-color:#111;
-  width: 100%;
-  height: 50px;
-  padding: 0;
-  margin: 0;
-}
 .logobug {
-  float: right;
-  width: 50px;
-  margin: 8px 10px -5px 10px;
-
+  margin: 0;
 }
 /* Style the navigation menu */
 .topnav {
-  display: block;
-  overflow: hidden;
-  background-color: #111;
-  position: relative;
+  font-family: Special Elite;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+ /* overflow: hidden; */
+  background-color: #444444;
+ /* position: relative; */
+}
+.bug {
+  height: 35px;
 }
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #links {
@@ -36,10 +34,12 @@ header {
 /* Style navigation menu links */
 .topnav a {
   color: white;
-  padding: 10px 16px 0px 20px;
+  text-decoration: none;
+  font-size: 3vw;
+/*  padding: 10px 16px 0px 20px;
   text-decoration: none;
   font-size: 17px;
-  display: block;
+  display: block; */
 }
 /* Style the hamburger menu */
 .topnav a.icon {
@@ -60,10 +60,13 @@ header {
    color: white;
 }
 .illustration {
-  background: #000;
-  valign-align: top;
-  margin-top: 0;
-  padding-top: 0;
+  background: #111;
+}
+.gallery {
+        padding: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
 }
 .bulletgrid {
     display: flex;
@@ -71,27 +74,25 @@ header {
   /*  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
 }
 main {
-  background: #111;
+  background: #222222;
   padding-top: 0;
 }
 .content1 {
-      width: 98%;
-      background-color: #000;
-      valign: top;
-      padding-left: 1em;
+      width: 100%;
+      background-color: #222222;
+      padding: 1em;
  }
  .content2 {
-      width: 98%;
-      background-color: #333;
-      valign: top;
-      padding-left: 1em;
+      width: 100%;
+      background-color: #111;
+      padding: 1em;
   }
 footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1em;
-    background: #333;
+    background: #222;
     width: 100%;
     height: 7em;
 }

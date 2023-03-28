@@ -2,38 +2,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
     <title>wakeless - oneiric concophonic collective</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special Elite" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Electrolize" />
     <Link rel="stylesheet" href="css/default.css" />
-
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
- </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
 
 <body>
-  <div class="wrapper">
-    <main>
+  <header>
       <div class="topnav">
-        <a href="blather.html" class="active">cunning linguistics</a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="links">
-          <a href="reseach.html">research</a>
-          <a href="prose.html">prose</a>
-          <a href="book.html">The Book</a>
-          <a href="ware.html">Magic spells a.k.a. software</a>
-          <a href="index.html">Back to Wakeless</a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="openNav()">
-          <i class="fa fa-bars"></i>
-        </a>
+      	
+          <a href="journal.html">Journal</a> .
+          <a href="gallery.html">gallery</a> .
+          <a href="projects.html">projects</a> .
+          <a href="index.html"><img src="img/logobug.png" class="bug" /></a>
+          <div id="links">
+              <a href="one.html">One</a>
+              <a href="mechanicalhand.html">Mechanical Hand</a>
+              <a href="blather.html">Blather Inflection</a>
+          </div>
       </div>
-
+  </header>
+  <main>
+  	<article>
       <picture class="illustration">
         <source media="(max-width: 412px)" type="image/avif" srcset="img/blather400.avif" />
         <source media="(min-width: 413px)" type="image/avif" srcset="img/blather800.avif" />
         <img class="mainimg" src="img/blather800.png" alt="blather" />
       </picture>
-    </main>
+   
         
     <div class="content">
 	      <p><h3>Fun facts about language and the stuff we make with it.</h3>
@@ -80,7 +80,15 @@
             research is done.</p>
 
 	    </div>
-  </div>
+	  </div>
+  	</article>
+
+  </main>
+  <footer>
+      <div>Wakeless Concophonic Collective</div>
+      <div>wakeless.one@gmail.com</div>
+      <div>385-490-1165</div>
+  </footer>
   <script>
     function openNav() {
         var x = document.getElementById("links");
